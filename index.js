@@ -102,16 +102,7 @@ client.on(Events.InteractionCreate, async interaction => {
 
 				return {
 				name: 'Code',
-				value: `${data.code}`
-				},
-				{
-				name: 'Expires: ',
-				value: `${data.expires_at}`,
-				inline: true
-				},
-				{
-				name: 'By:',
-				value: `${data.user.username}#${data.user.discriminator}`,
+				value: `✅ ${data.code} \nExpires: ${data.expires_at} by ${data.user.username}#${data.user.discriminator}`,
 				inline: true
 				};
 			} else {
